@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>About Us - Curated Crates</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+
+    <style>
+        :root {
+          --deep-pink: #8B004B;
+          --beige: #F5EBDD;
+          --text: #2c2c2c;
+        }
+
+        body {
+          font-family: system-ui, -apple-system, sans-serif;
+          background-color: var(--beige);
+          color: var(--text);
+          margin: 0;
+          padding: 0;
+        }
+
+        .container {
+          background-color: #fff;
+          max-width: 720px;
+          margin: 3rem auto;
+          padding: 3rem 2rem;
+          border-radius: 16px;
+          box-shadow: 0 6px 24px rgba(0, 0, 0, 0.05);
+          animation: fadeIn 0.6s ease-in-out;
+        }
+
+        @keyframes fadeIn {
+          from { opacity: 0; transform: translateY(20px); }
+          to { opacity: 1; transform: translateY(0); }
+        }
+
+        h2 {
+          font-family: Georgia, serif;
+          color: var(--deep-pink);
+          text-align: center;
+          font-size: 2rem;
+          margin-bottom: 1.5rem;
+        }
+
+        p {
+          font-size: 1.05rem;
+          line-height: 1.8;
+          margin-bottom: 1.3rem;
+        }
+
+        h5 {
+          font-family: Georgia, serif;
+          font-weight: 600;
+          color: var(--deep-pink);
+        }
+
+        hr.section-divider {
+          border: none;
+          border-top: 1px solid #ddd;
+          margin: 2.5rem 0;
+        }
+
+        .btn-outline-secondary {
+          border-color: var(--deep-pink);
+          color: var(--deep-pink);
+        }
+
+        .btn-outline-secondary:hover {
+          background-color: var(--deep-pink);
+          color: white;
+        }
+
+        .rounded-circle {
+          width: 120px;
+          height: 120px;
+          object-fit: cover;
+          border-radius: 50%;
+        }
+
+        @media (max-width: 576px) {
+          h2 {
+            font-size: 1.6rem;
+          }
+
+          .container {
+            padding: 2rem 1rem;
+          }
+
+          .rounded-circle {
+            width: 100px;
+            height: 100px;
+          }
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h2>Who We Are</h2>
+    <p>
+        What started as a passion for beautiful details and meaningful gifts… has now become a brand. Curated Crates is a reservoir of cherishing every moment with your family, friends, and corporate connections — reaffirming the importance of relationships.
+    </p>
+    <p>
+        We recognized a gap in the market for curated, meaningful gifts that reflect a true personal touch. That's how Curated Crates came into existence — combining expert selection and personalization to deliver beautiful hampers that create lasting memories.
+    </p>
+
+    <hr class="section-divider">
+
+    <h2>Our Purpose</h2>
+    <p>
+        With people giving and receiving generic gifts, the gifting gesture has become somewhat monotonous. We, at Curated Crates, aim to redefine the gifting landscape with a wide range of personalized, premium, and delightful gift options.
+    </p>
+    <p>
+        Our goal is to make the gifting experience unforgettable — for both the person giving the gift and the one receiving it. We lovingly craft every hamper to match unique personalities, relationships, and occasions.
+    </p>
+
+    <hr class="section-divider">
+
+    <h2>Meet the Founder</h2>
+    <div class="row align-items-center mb-4">
+        <div class="col-md-4 text-center mb-3 mb-md-0">
+            <img src="/images/founder.jpeg" alt="Shreya Gandhi" class="rounded-circle img-fluid shadow-sm">
+        </div>
+        <div class="col-md-8">
+            <h5 class="mb-2">Shreya Gandhi</h5>
+            <p class="fst-italic" style="font-size: 0.95rem;">
+                “In a world that moves fast, I wanted to slow things down — to bring back the charm of thoughtful gestures and beautifully crafted moments. Curated Crates is more than just a gifting brand; it's a celebration of stories, relationships, and the art of making someone feel special. Every hamper is my love letter to joy, beauty, and personal connection.”
+            </p>
+        </div>
+    </div>
+
+    <div class="text-center mt-4">
+        <a href="/" class="btn btn-outline-secondary">← Back Home</a>
+    </div>
+</div>
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
