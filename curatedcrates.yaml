@@ -1,0 +1,7 @@
+services:
+  - type: web
+    name: curated-crates
+    env: java
+    buildCommand: ./mvnw clean package -DskipTests
+    startCommand: java -jar target/CuratedCrates-1.0.0.jar
+    plan: free
