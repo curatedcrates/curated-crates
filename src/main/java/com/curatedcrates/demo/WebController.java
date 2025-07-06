@@ -26,10 +26,9 @@ public class WebController {
         return "contact";
     }
 
-    @PostMapping("/send")
+    @PostMapping("/contact")
     public String sendMessage(@RequestParam String name, @RequestParam String email,
-                               @RequestParam String message, RedirectAttributes redirectAttributes) {
-
+                              @RequestParam String message, RedirectAttributes redirectAttributes) {
         String subject = "New message from: " + name;
         String body = "Sender Email: " + email + "\n\nMessage:\n" + message;
 

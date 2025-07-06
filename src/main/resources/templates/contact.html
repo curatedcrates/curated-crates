@@ -77,6 +77,9 @@
 <div class="container">
     <h2>Contact Us</h2>
 
+    <!-- ✅ Success message -->
+    <div th:if="${success}" class="alert alert-success text-center" th:text="${success}"></div>
+
     <form method="post" action="/contact">
         <div class="mb-3">
             <label for="name" class="form-label">Your Name</label>
